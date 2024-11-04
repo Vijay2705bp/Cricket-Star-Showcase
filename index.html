@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Star Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Cricket Legends Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#players">Player Profiles</a></li>
+                <li><a href="#map">Interactive Map</a></li>
+                <li><a href="#matches">Top Matches</a></li>
+                <li><a href="#fan-zone">Fan Zone</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to the World of Cricket</h2>
+        <p>Discover the profiles and achievements of the greatest cricket players from around the globe!</p>
+        <h3>Featured Players</h3>
+        <div class="featured-players">
+            <img src="C:\Users\Admin\Desktop\Cricket Legends Hub\sir donald bradman.jpeg" alt="Sir Donald Bradman">
+            <img src="C:\Users\Admin\Desktop\Cricket Legends Hub\sachin tendulkar.jpg" alt="Sachin Tendulkar">
+            <img src="C:\Users\Admin\Desktop\Cricket Legends Hub\king kohli.jpg" alt="Virat Kohli">
+            <!-- Add more featured players as needed -->
+        </div>
+    </section>
+
+    <section id="players">
+        <h2>Player Profiles</h2>
+        <div class="player-profile">
+            <img src="C:\Users\Admin\Desktop\Cricket Legends Hub\sir donald bradman.jpeg" alt="Sir Donald Bradman">
+            <h3>Sir Donald Bradman</h3>
+            <p><strong>Country:</strong>Australia</p>
+            <p><strong>Career Stats:</strong> His Test average was 99.94 and his Test aggregate 6,996 runs</p>
+            <p><strong>Achievements:</strong> November 1931, Bradman scored 100 off 22 balls in a three over spell in a match for Blackheath against Lithgow</p>
+        </div>
+        <div class="player-profile">
+            <img src="C:\Users\Admin\Desktop\Cricket Legends Hub\sachin tendulkar.jpg" alt="Sachin Tendulkar">
+            <h3>Sachin Tendulkar</h3>
+            <p><strong>Country:</strong> India</p>
+            <p><strong>Career Stats:</strong> Number of centuries: 100</p>
+            <p><strong>Achievements:</strong> Sachin has been lauded with Arjuna Award in 1994, Khel Ratna in 1997, Padma Shri in 1998 and Padma Vibhushan (2008) honours</p>
+        </div>
+        <!-- Add more player profiles as needed -->
+    </section>
+
+    <section id="map">
+        <h2>Interactive Map</h2>
+        <div id="mapContainer"></div>
+    </section>
+
+    <section id="matches">
+        <h2>Top Matches</h2>
+        <div class="match">
+            <h3>Match Title</h3>
+            <p>Description of the match.</p>
+            <iframe width="560" height="315" src="https://youtu.be/OMBEtL6-mnU?si=11wnRW5VaC75Tfw6" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!-- Add more match highlights as needed -->
+    </section>
+
+    <section id="fan-zone">
+        <h2>Fan Zone</h2>
+        <form id="fanStoryForm">
+            <label for="playerName">Favorite Player:</label>
+            <input type="text" id="playerName" required>
+            <label for="story">Your Story:</label>
+            <textarea id="story" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <h3>Vote for the Greatest Player:</h3>
+        <form id="voteForm">
+            <label for="greatestPlayer">Choose your player:</label>
+            <select id="greatestPlayer">
+                <option value="player1">Player 1</option>
+                <option value="player2">Player 2</option>
+                <option value="player3">Player 3</option>
+                <!-- Add more players as needed -->
+            </select>
+            <button type="submit">Vote</button>
+        </form>
+        <div id="fanStories"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Cricket Legends</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
